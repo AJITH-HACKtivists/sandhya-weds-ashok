@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     "weddingpage",
     "webpack_loader",
     "rest_framework",
-    "storages",
 ]
 
 MIDDLEWARE = [
