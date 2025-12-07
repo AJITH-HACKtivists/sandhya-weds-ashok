@@ -4,7 +4,7 @@
 .uploads-div-main {
     width: 100%;
     min-height: 100vh;
-    padding: 60px 20px;
+    /* padding: 60px 20px; */
     display: flex;
     justify-content: center;
     background: radial-gradient(circle at top left, #ffe4ee 0%, #ffd6e7 25%, #cffffc 100%);
@@ -15,14 +15,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+.css-1bxgmyl-LoadingOverlayWrapperBase{
+    width: 95%;
+    max-width: 900px;
+    padding: 40px 50px;
+}
+
 
 /* ===========================================
    MAIN CARD (Glass Effect)
    =========================================== */
 .upload-card {
-    width: 95%;
-    max-width: 900px;
-    padding: 40px 50px;
+    padding:20px;
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(12px);
     border-radius: 25px;
