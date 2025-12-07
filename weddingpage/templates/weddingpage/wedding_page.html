@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+{% load static %}
+
+{% block title %}Sandhya Weds Ashok{% endblock %}
+{% block head %}
+  <link rel="stylesheet" href="{% static 'weddingpage/css/wedding_page.css' %}">
+{% endblock %}
+{% block content %}
+<div id="wedding-root"></div>
+{% endblock %}
+
+{% block scripts %}
+    {{block.super}}
+    <script>
+      wed.imagesUploadUrl = "{% url 'image-upload-url' %}";
+   </script>
+    {% render_bundle 'wedding_page' %}
+{% endblock %}

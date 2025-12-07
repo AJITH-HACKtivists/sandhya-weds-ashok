@@ -1,0 +1,1 @@
+var wed = window.wed || (window.wed = {})

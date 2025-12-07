@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+
+    {% block head %}
+    <!-- styles (CSS bundles or static files) -->
+    {% endblock %}
+</head>
+
+<body>
+        {% block content %}
+        {% endblock %}
+
+    <!-- Scripts go here -->
+    {% block scripts %}
+     <script>
+        var wed = {}
+        window.wed = wed;
+     </script>
+    {% endblock %}
+
+</body>
+</html>

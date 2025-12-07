@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -o errexit
+
+# 1. Install Python dependencies
+pip install -r requirements.txt
+
+# 2. Build React bundles with Webpack
+npm install
+npx webpack --config webpack.config.js
+
+# 3. Collect static files (for Whitenoise)
+python manage.py collectstatic --noinput
+
+# 4. Run migrations
+python manage.py migrate --noinput

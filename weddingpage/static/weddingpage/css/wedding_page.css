@@ -1,0 +1,243 @@
+/* ===========================================
+   GLOBAL / PAGE BACKGROUND — Premium Pastel
+   =========================================== */
+.uploads-div-main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle at top left, #ffe4ee 0%, #ffd6e7 25%, #cffffc 100%);
+    background-image:
+        url("https://www.transparenttextures.com/patterns/flower-circles.png"),
+        radial-gradient(circle at top left, #ffe4ee 0%, #ffd6e7 25%, #cffffc 100%);
+    background-blend-mode: soft-light;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ===========================================
+   MAIN CARD (Glass Effect)
+   =========================================== */
+.upload-card {
+    width: 95%;
+    max-width: 900px;
+    padding: 40px 50px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(255, 100, 150, 0.28);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+   0% { opacity: 0; transform: translateY(20px); }
+   100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===========================================
+   HEADING — Elegant Wedding Font
+   =========================================== */
+.upload-card h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 52px;
+    color: #b10e57;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0 3px 10px rgba(255, 100, 150, 0.4);
+}
+
+
+/* ===========================================
+   DRAG & DROP AREA — Modern + Floating
+   =========================================== */
+.drag-and-drop-div {
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px dashed rgba(255, 50, 120, 0.6);
+    padding: 55px 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.35s ease;
+    box-shadow: 0 10px 30px rgba(255, 80, 150, 0.12);
+    animation: floatSoft 6s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+   0% { transform: translateY(0px); }
+   50% { transform: translateY(-8px); }
+   100% { transform: translateY(0px); }
+}
+
+.drag-and-drop-div:hover {
+    border-color: #ff0077;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 35px rgba(255, 20, 100, 0.25);
+}
+
+
+/* ===========================================
+   PREVIEW SECTION
+   =========================================== */
+.preview-div {
+    margin-top: 40px;
+}
+
+.preview-div > p {
+    font-size: 24px;
+    color: #9c0d54;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.outer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* ===========================================
+   INDIVIDUAL PREVIEW CARD
+   =========================================== */
+.photos-div-main {
+    position: relative;
+    width: 170px;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #ffd4e8;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(255, 100, 160, 0.18);
+    transition: 0.4s ease;
+}
+
+.photos-div-main:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(255, 100, 160, 0.28);
+}
+
+.photo-div {
+    width: 100%;
+    height: 130px;
+}
+
+.photo-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.4s ease;
+    border: none;
+}
+
+.photos-div-main:hover .photo-div img {
+    transform: scale(1.15);
+}
+
+
+/* ===========================================
+   DETAILS OVERLAY (on hover)
+   =========================================== */
+.photo-details-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 14px;
+    transform: translateY(-100%);
+    transition: 0.4s ease;
+}
+
+.photos-div-main:hover .photo-details-div {
+    transform: translateY(0);
+}
+
+.photo-details-div button {
+    margin-top: 12px;
+    color: white;
+    border: none;
+    padding: 5px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.remove-btn {
+    margin-top: 12px;
+    background: none !important;
+    outline: none;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.remove-btn:hover {
+    transform: scale(1.05);
+}
+
+.remove-btn svg {
+    display: block;
+}
+
+
+/* ===========================================
+   BUTTONS — Premium + Smooth Hover
+   =========================================== */
+button[type="button"],
+button[type="reset"] {
+    margin-top: 35px;
+    padding: 15px 36px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+/* Reset */
+button[type="reset"] {
+    background: #ffe5ef;
+    color: #b70055;
+    border: 1px solid #ffbfdc;
+}
+
+button[type="reset"]:hover {
+    background: #ffd4e8;
+}
+
+/* Upload Button */
+button[type="button"] {
+    background: linear-gradient(135deg, #ff4d94, #ff1a6a);
+    color: white;
+    box-shadow: 0 6px 18px rgba(255, 20, 120, 0.35);
+}
+
+button[type="button"]:not(:disabled):hover {
+    background: linear-gradient(135deg, #ff1a6a, #c90052);
+    transform: translateY(-3px);
+}
+
+button[type="button"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

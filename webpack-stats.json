@@ -1,0 +1,39 @@
+{
+  "status": "done",
+  "assets": {
+    "runtime.bundle.js": {
+      "name": "runtime.bundle.js",
+      "path": "F:\\Users\\AJ\\Applications\\Sandhya-weds-ashok-django\\sandhya_weds_ashok\\frontend\\static\\bundles\\runtime.bundle.js",
+      "publicPath": "/static/bundles/runtime.bundle.js"
+    },
+    "vendor.bundle.js": {
+      "name": "vendor.bundle.js",
+      "path": "F:\\Users\\AJ\\Applications\\Sandhya-weds-ashok-django\\sandhya_weds_ashok\\frontend\\static\\bundles\\vendor.bundle.js",
+      "publicPath": "/static/bundles/vendor.bundle.js"
+    },
+    "vendors-node_modules_emotion_css_dist_emotion-css_esm_js-node_modules_dom-helpers_esm_addClas-9b44c9.bundle.js": {
+      "name": "vendors-node_modules_emotion_css_dist_emotion-css_esm_js-node_modules_dom-helpers_esm_addClas-9b44c9.bundle.js",
+      "path": "F:\\Users\\AJ\\Applications\\Sandhya-weds-ashok-django\\sandhya_weds_ashok\\frontend\\static\\bundles\\vendors-node_modules_emotion_css_dist_emotion-css_esm_js-node_modules_dom-helpers_esm_addClas-9b44c9.bundle.js",
+      "publicPath": "/static/bundles/vendors-node_modules_emotion_css_dist_emotion-css_esm_js-node_modules_dom-helpers_esm_addClas-9b44c9.bundle.js"
+    },
+    "vendors-node_modules_scheduler_index_js-node_modules_toastr_build_toastr_min_css-node_modules-62e097.bundle.js": {
+      "name": "vendors-node_modules_scheduler_index_js-node_modules_toastr_build_toastr_min_css-node_modules-62e097.bundle.js",
+      "path": "F:\\Users\\AJ\\Applications\\Sandhya-weds-ashok-django\\sandhya_weds_ashok\\frontend\\static\\bundles\\vendors-node_modules_scheduler_index_js-node_modules_toastr_build_toastr_min_css-node_modules-62e097.bundle.js",
+      "publicPath": "/static/bundles/vendors-node_modules_scheduler_index_js-node_modules_toastr_build_toastr_min_css-node_modules-62e097.bundle.js"
+    },
+    "wedding_page.bundle.js": {
+      "name": "wedding_page.bundle.js",
+      "path": "F:\\Users\\AJ\\Applications\\Sandhya-weds-ashok-django\\sandhya_weds_ashok\\frontend\\static\\bundles\\wedding_page.bundle.js",
+      "publicPath": "/static/bundles/wedding_page.bundle.js"
+    }
+  },
+  "chunks": {
+    "wedding_page": [
+      "runtime.bundle.js",
+      "vendor.bundle.js",
+      "vendors-node_modules_emotion_css_dist_emotion-css_esm_js-node_modules_dom-helpers_esm_addClas-9b44c9.bundle.js",
+      "wedding_page.bundle.js"
+    ]
+  },
+  "publicPath": "/static/bundles/"
+}
