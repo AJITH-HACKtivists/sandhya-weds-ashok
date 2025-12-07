@@ -20,7 +20,7 @@ const Upload = ()=>{
         let filesToUpdate = {...files};
         const filesToAdd = Array.from(filesToUpload);
         filesToAdd.forEach(file=>{
-          if(!file.type.startsWith("video/") || !file.type.startsWith("image/")){
+          if(file.type.startsWith("video/") || file.type.startsWith("image/")){
             filesToUpdate[`${file.name}-${file.size}-${file.type}`] = file
           }
         })
